@@ -1,0 +1,102 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  background-image: url("images/tightdefence.jpeg");
+  background-size: auto;
+}
+
+a {
+  color: blue;
+}
+
+.grid-1 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0px;
+  max-width: fit-content;
+  margin-left: 410px;
+  background-color: black;
+  margin-bottom: 160px;
+}
+
+.about {
+  background-image: url("images/tightdefence.jpeg");
+  background-size: 420px 420px;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 420px;
+  margin: 0% auto;
+  color: white;
+  margin-top: 0px;
+}
+.main-1 {
+  background-image: url("images/arthemusdolgin.jpeg");
+  background-repeat: no-repeat;
+  background-size: 420px 420px;
+  height: 420px;
+  width: 420px;
+  margin: 0% auto;
+}
+
+.main-2 {
+  background-image: url("images/snel.png");
+  background-repeat: no-repeat;
+  background-size: 420px 420px;
+  height: 420px;
+  width: 420px;
+  margin: 0% auto;
+}
+
+.main-3 {
+  background-image: url("images/Yedi.png");
+  background-repeat: no-repeat;
+  background-size: 420px 420px;
+  height: 420px;
+  width: 420px;
+  margin: 0% auto;
+}
+
+.main-4 {
+  background-image: url("images/wrestling.jpeg");
+  background-repeat: no-repeat;
+  background-size: 420px 420px;
+  height: 420px;
+  width: 420px;
+  margin: 0% auto;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 160px;
+}
+
+@media (max-width: 850px) {
+  .grid-1 {
+    margin-left: 0px;
+  }
+
+  .about {
+    width: 300px;
+  }
+  .main-1 {
+    width: 300px;
+  }
+
+  .main-2 {
+    width: 300px;
+  }
+
+  .main-3 {
+    width: 300px;
+  }
+
+  .main-4 {
+    width: 300px;
+  }
+
+  .footer {
+    width: 300px;
+  }
+}
