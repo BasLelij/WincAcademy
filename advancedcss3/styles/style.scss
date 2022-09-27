@@ -1,0 +1,20 @@
+@import "variables";
+
+body {
+  background-color: $backgroundbody;
+}
+
+@import "testim";
+
+/* Hier onder de 2 grids, ik heb ze beide geprobeerd alleen is de grid die je kon maken 
+met de testimonial erin niet helemaal gelukt. Ik heb hem er toch maar in gelaten omdat u misschien
+ziet wat er fout gaat, zo niet dan ook geen probleem. Ik heb de 2e grid eerst gemaakt en 
+daar komt de structuur vandaan voor de 1e grid. 
+Bedankt voor het nakijken alvast! 
+Met vriendelijke groet Bas van der Lely*/
+
+@import "grid";
+
+@import "gridsecond";
+
+@import "sidebar";

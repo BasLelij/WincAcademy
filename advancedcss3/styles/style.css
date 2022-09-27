@@ -1,0 +1,272 @@
+body {
+  background-color: #c3cfe2;
+}
+
+main {
+  background-color: #fff;
+  height: 400px;
+  width: 400px;
+  border-radius: 30px 30px 0px 0px;
+  color: darkgrey;
+}
+main p {
+  font-size: 25px;
+  padding: 38px;
+}
+
+footer {
+  background-color: #686de0;
+  color: #fff;
+  height: 200px;
+  width: 400px;
+  margin-top: -30px;
+  text-align: center;
+  border-radius: 0px 0px 30px 30px;
+}
+footer > h2 {
+  padding-top: 70px;
+}
+
+.testimonial {
+  position: relative;
+  height: 600px;
+  width: 400px;
+  margin-bottom: 120px;
+}
+.testimonial > img {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 340px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* Hier onder de 2 grids, ik heb ze beide geprobeerd alleen is de grid die je kon maken 
+met de testimonial erin niet perfect. ik snap niet waarom bij die grid de
+blur niet werkt (als u het ook niet snel ziet is dat geen probleem!), de 2e werkt naar behoren.
+ik denk dat het handig is om eerst de testimonial en de laatste grid na te kijken, 
+daar komen mijn structuren vandaan. Bedankt voor het nakijken alvast! 
+Met vriendelijke groet Bas van der Lely*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: repeat(400px);
+  grid-gap: 30px;
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  border-radius: 50px;
+}
+
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 30px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+  transition: 200ms ease-in-out;
+}
+
+.img-wrapper > .content.fade {
+  opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+.img-wrapper:hover > img.blur {
+  filter: blur(5px);
+}
+
+.img-wrapper:hover > img.zoom {
+  transform: scale(1.1);
+}
+
+.img-wrapper .gridpic > img {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 340px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(400px);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(400px);
+  }
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: repeat(400px);
+  grid-gap: 30px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  border-radius: 50px;
+}
+
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 30px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+  transition: 200ms ease-in-out;
+}
+
+.img-wrapper > .content.fade {
+  opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+.img-wrapper:hover > img.blur {
+  filter: blur(5px);
+}
+
+.img-wrapper:hover > img.zoom {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(400px);
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(400px);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(400px);
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(400px);
+  }
+}
+nav {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  width: 107px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav li {
+  height: 60px;
+  position: relative;
+  margin-bottom: -16px;
+  list-style-type: none;
+}
+
+nav li a {
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  padding-left: 25%;
+  transition: 1s;
+}
+
+nav ul li .blog {
+  background: #e17b77;
+}
+
+nav ul li .twitter {
+  background: #3b5998;
+}
+
+nav ul li .linkedin {
+  background: #00aced;
+}
+
+nav ul li .facebook {
+  background: #007bb6;
+}
+
+nav ul li .github {
+  background: #333;
+}
+
+nav li a i {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 27px;
+}
+
+nav li a span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: none;
+}
+
+nav ul li a:hover {
+  z-index: 2;
+  margin-left: -200px;
+  width: 200px;
+  padding-right: 50px;
+}
+
+nav ul li a i {
+  transition: 1s;
+}
+
+nav ul li a:hover i {
+  margin-left: -200px;
+}
+
+nav ul li a:hover span {
+  display: block;
+  padding-left: 30%;
+}/*# sourceMappingURL=style.css.map */
