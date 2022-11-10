@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Toggle</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- geachtte,
+Hierbij mijn opdracht, ik kwam er niet uit hoe ik de bonusopdracht over
+de button kon doen. De opdracht waarbij de klik op de button een melding moest
+geven waarin stond wat de background color was. De bonusopdracht over de
+css transition lukte mij ook niet. Bedankt voor het nakijken!
+Met vriendelijke Groet,
+Bas van der Lely-->
+  <body>
+    <header>
+      <div
+        id="fixing-hover"
+        onclick="toggleNav()"
+        onmouseover="hoverOnNav()"
+        onmouseout="hoverOutNav()"
+      >
+        <img
+          src="./images/menulogo.png"
+          alt="menu logo"
+          width="60px"
+          height="60px"
+        />
+      </div>
+    </header>
+    <aside
+      class="nav-sidebar"
+      onmouseover="hoverOnNav()"
+      onmouseout="hoverOutNav()"
+    >
+      <div class="nav-part">
+        <ul class="ul">
+          <button onclick="btnFunction">
+            What background color is selected?
+          </button>
+          <li onclick="closeTheNav()">home</li>
+          <li id="red-li" onclick="makeColorRed()">Red</li>
+          <li id="orange-li" onclick="makeColorOrange()">Orange</li>
+          <li id="purple-li" onclick="makeColorPurple()">Purple</li>
+          <li id="green-li" onclick="makeColorGreen()">Green</li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <p id="selected-color-text">Your selected color is:</p>
+    </main>
+  </body>
+</html>

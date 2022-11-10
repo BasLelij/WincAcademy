@@ -1,0 +1,54 @@
+header {
+  height: 60px;
+  width: auto;
+  position: fixed;
+  top: 0;
+}
+
+#fixing-hover {
+  padding-right: 190px;
+}
+
+.nav-sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 250px;
+  padding: 0px 5px;
+  text-decoration: none;
+  background-color: #111;
+  height: 100%;
+  color: white;
+  visibility: hidden;
+}
+
+.nav-sidebar .ul li {
+  list-style-type: none;
+  padding: 10px 0px;
+  line-height: 1.5em;
+}
+
+.nav-sidebar .ul li:hover {
+  background-color: #222;
+}
+
+#red-li {
+  color: red;
+}
+
+#orange-li {
+  color: orange;
+}
+
+#purple-li {
+  color: purple;
+}
+
+#green-li {
+  color: green;
+}
+
+main p {
+  display: flex;
+  justify-content: center;
+}
