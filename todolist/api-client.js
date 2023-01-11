@@ -24,11 +24,4 @@
 //     console.log(error);
 //   });
 
-// const data = { description: "buy oatmeal", done: false };
-// fetch("http://localhost:3000", {
-//   method: "POST",
-//   body: JSON.stringify(data),
-//   headers: {
-//     "Content-Type": "application/json",
-//   },
-// });
+
